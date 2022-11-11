@@ -36,29 +36,11 @@ body{
     overflow: hidden;
     border-radius: 6px;
 }
-@media (max-width: 675px) {
-    .cards {
-      flex-direction: column;
-      height: 1200px;
-      width: 90%;
-      margin: 10% auto;
-    }
-    .sedans, .suvs, .luxury{
-        justify-content: space-between;
-    }
-    .title{
-        font-size: 3rem!important;
-    }
-    .sedans .logo, .suvs .logo, .luxury .logo{
-        transform: scale(1)!important;
-        margin-left: 0!important;
-    }
-  }
+
 footer{
     color: var(--Very-dark-cyan);
     width: 100%;
     height: 40px;
-    padding-top: 20px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -115,3 +97,35 @@ footer{
 .luxury .cardsButton{
     color: var(--Very-dark-cyan);
 }
+
+@media (max-width: 675px) {
+    .cards {
+      flex-direction: column;
+      height: 1200px;
+      width: 90%;
+      margin: 10% auto;
+    }
+    .sedans, .suvs, .luxury{
+        justify-content: space-between;
+        padding: 41px 55px;
+    }
+    .cardsButton{
+        height: 50px;
+        width: 60%;
+        font-size: 15px;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .text{
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .sedans .logo, .suvs .logo, .luxury .logo{
+        transform: scale(1);
+        margin-left: 0;
+    }
+    footer{
+        bottom: -135%;
+    }
+  }
